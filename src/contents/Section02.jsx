@@ -34,9 +34,8 @@ const slideUpAnimation = keyframes`
 const SectionWrapper = styled.section`
   padding: 2rem;
   width: 100vw;
-  height: 200vh;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,9 +45,7 @@ const SectionWrapper = styled.section`
 const ContsWrapper = styled.section`
   display: flex;
   width: 100%;
-  height: 216rem;
-  max-width: 144rem;
-  max-height: 216rem;
+  min-height: 100vh;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
@@ -56,14 +53,12 @@ const ContsWrapper = styled.section`
   gap: 22rem;
   flex-shrink: 0;
   @media (max-width: 1024px) {  // tablet
-    max-width: 83.4rem;
-    max-height: 358.2rem;
+    min-height: 100vh;
     padding: 4rem;
     gap: 12rem;
   }
   @media (max-width: 768px) {  // mobile
-    max-width: 39rem;
-    max-height: 168.8rem;
+    min-height: 100vh;
     padding: 1rem;
     gap: 4.5rem;
   }

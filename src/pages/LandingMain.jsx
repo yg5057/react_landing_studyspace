@@ -6,8 +6,9 @@ import Section02 from '../contents/Section02';
 import Section03 from '../contents/Section03';
 
 const LandingWrapper = styled.section`
-  width: 100%;
-  display: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

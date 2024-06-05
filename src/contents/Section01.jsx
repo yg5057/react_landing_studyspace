@@ -33,6 +33,9 @@ const SectionWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {  // mobile
+    margin-top: 5rem;
+  }
 `;
 const ContsWrapper = styled.section`
   display: flex;
@@ -43,10 +46,10 @@ const ContsWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12rem;
+  gap: 8rem;
   flex-shrink: 0;
   @media (max-width: 1024px) {  // tablet
-    gap: 16rem;
+    gap: 8rem;
   }
   @media (max-width: 768px) {  // mobile
     gap: 8rem;
@@ -89,20 +92,6 @@ const Text = styled.article`
     gap: .3rem;
   }
 `
-// const Text = styled.article`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     flex-shrink: 0;
-//     animation: ${slideUpAnimation} 1.4s ease forwards;
-//     @media (max-width: 1024px) {  // tablet
-//     gap: 5rem;
-//   }
-//   @media (max-width: 768px) {  // mobile
-//     gap: 3rem;
-//   }
-// `
 const Btn = styled.div`
     display: flex;
     justify-content: center;
@@ -136,8 +125,8 @@ const Section01 = () => {
             </Title>
           ) : (
             <Title>
-              <TypoH5 fontWeight='600' textAlign='center'>반셀프 인테리어...</TypoH5>
-              <TypoH5 fontWeight='600' textAlign='center'>하고 싶은데 혼자서 공부하는게 너무 힘드셨죠?</TypoH5>
+              <TypoH6 fontWeight='600' textAlign='center'>반셀프 인테리어...</TypoH6>
+              <TypoH6 fontWeight='600' textAlign='center'>하고 싶은데 혼자서 공부하는게 너무 힘드셨죠?</TypoH6>
             </Title>
           )}
           {isMobile ? (
@@ -160,13 +149,13 @@ const Section01 = () => {
             </Text>
           ) : isTablet ? (
             <Text>
-              <TypoH4 fontWeight='500' textAlign='center'>다른 인테리어 소비자들과 함께</TypoH4>
-              <TypoH4 fontWeight='500' textAlign='center'>인테리어 스터디도 받고, 전문가 상담까지 한번에!</TypoH4>
+              <TypoH5 fontWeight='500' textAlign='center'>다른 인테리어 소비자들과 함께</TypoH5>
+              <TypoH5 fontWeight='500' textAlign='center'>인테리어 스터디도 받고, 전문가 상담까지 한번에!</TypoH5>
             </Text>
           ) : (
             <Text>
-              <TypoH3 fontWeight='600' textAlign='center'>다른 인테리어 소비자들과 함께</TypoH3>
-              <TypoH3 fontWeight='600' textAlign='center'>인테리어 스터디도 받고, 전문가 상담까지 한번에!</TypoH3>
+              <TypoH4 fontWeight='600' textAlign='center'>다른 인테리어 소비자들과 함께</TypoH4>
+              <TypoH4 fontWeight='600' textAlign='center'>인테리어 스터디도 받고, 전문가 상담까지 한번에!</TypoH4>
             </Text>
           )}
         </TitleWrapper>
