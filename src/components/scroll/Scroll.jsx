@@ -9,8 +9,8 @@ const ScrollWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    color: var(--Primary-400, #4C94FF);
-    font-family: "Krona One";
+    color: var(--Amethyst-Purple-600);
+    font-family: var(--font-family-secondary);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -40,8 +40,8 @@ const StyledScroll = styled.div`
     width: 12px;
     height: 12px;
     border-radius: 3px;
-    background: linear-gradient(0deg, #1975FF, #1975FF), 
-                linear-gradient(0deg, #33A9FF, #33A9FF);
+    background: linear-gradient(0deg, #6952E0, #6952E0), 
+                linear-gradient(0deg, #A752E0, #A752E0);
   }
   span:nth-child(1) {
     opacity: 0.1;

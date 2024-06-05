@@ -5,7 +5,7 @@ const MainContent = styled.main`
   width: 100vw;
   height: 100%;
   overflow-y: auto;
-  background: var(--Gradient-Silky-Blue-Gradient);
+  background: var(--BG-White);
   backdrop-filter: blur(2px);
 `;
 

@@ -2,34 +2,54 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const StyledCard = styled.div`
+const StyledCardWrapper = styled.div`
   display: flex;
-  width: calc((100% - 20rem) / 3);
-  height: auto;
-  max-width: 30rem;
-  max-height: 30rem;
-  padding: 6rem 5rem;
+  width: 56.8rem;
+  height: 60.1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   flex-shrink: 0;
   border-radius: 15px;
   background: var(--White);
-  box-shadow: var(--DropShadow-OnLight-XXL);
-  
-  @media (max-width: 1024px) { // tablet 
-    max-width: 23rem;
-    max-height: 23rem;
-    padding: 3rem;
-  }
+  box-shadow: var(--DropShadow-OnDark-XXL);
+`;
+const StyledCardTop = styled.div`
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  padding: 4rem 6rem 1rem 6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+`;
+const StyledCardBtm = styled.div`
+  display: flex;
+  width: 100%;
+  height: 45.1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-shrink: 0;
 `;
 
-const CardLarge = ({ children }) => {
+const Image = styled.img`
+  width: auto;
+  height: auto;
+`;
+
+
+const CardLarge = ({ children, image }) => {
   return (
-    <StyledCard>
-      {children}
-    </StyledCard>
+    <StyledCardWrapper>
+      <StyledCardTop>
+        {children}
+      </StyledCardTop>
+      <StyledCardBtm>
+        <Image src={image} alt="Card Image" />
+      </StyledCardBtm>
+    </StyledCardWrapper>
   );
 };
 

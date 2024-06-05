@@ -25,6 +25,8 @@ const GlobalStyle = createGlobalStyle`
     --Black: #121212;
     --TrialBlack: #000;
     --BG-LightBlue: #F8F9FB;
+    --BG-White: #F8F9FC;
+    --BG-SkyBlue: #D7E7F5;
     --Sky-Blue: #4597F7;
     --Primary-50: #F0F6FF;
     --Primary-100: #CCE0FF;
@@ -57,10 +59,15 @@ const GlobalStyle = createGlobalStyle`
     --Neutral-Gray-800: #202B37;
     --Neutral-Gray-900: #141C24;
     --Mandarin-Orange-600: #F04F0F;
+    --Majorelle-Blue-600: #4426D9;
+    --Amethyst-Purple-600: #9126D9;
+      /* Gradient */
     --Gradient-Primary: linear-gradient(80deg, #1975FF 0%, #33A9FF 100%);
     --Gradient-Silky-Blue-Gradient: linear-gradient(81deg, #F8F9FB 0%, #DBE5FA 83%, #C8D9F9 100%);
     --Gradient-Dark-Blue-Gradient: linear-gradient(81deg, #1A62FF 0%, #0041CC 100%);
     --Gradient-Mandarin-Orange-Gradient: linear-gradient(81deg, #F3733F 0%, #F73B3B 100%);
+    --Gradient-Majorelle-Blue-Gradient: linear-gradient(81deg, #6952E0 0%, #A752E0 100%);
+    --Gradient-Amethyst-Purple-Gradient: linear-gradient(81deg, #A752E0 0%, #F042BC 100%);
     /* DropShadow */
     --DropShadow-OnDark-XS:  0px 1px 2px 0px rgba(0, 0, 0, 0.23);
     --DropShadow-OnDark-S: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);

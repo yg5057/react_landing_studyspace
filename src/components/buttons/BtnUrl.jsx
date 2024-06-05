@@ -15,13 +15,17 @@ const StyledButton = styled.button.attrs(props => ({
     padding: 1.2rem 2.4rem;
     justify-content: center;
     align-items: center;
-    background: var(--Gradient-Primary);
+    background: var(--Gradient-Majorelle-Blue-Gradient);
     color: var(--White);
     border-radius: 50px;
     cursor: pointer;
     &:active {
         transform: translateY(3px);  cursor: pointer;
     }
+    @media (max-width: 768px) {  // mobile
+        width: 18rem;
+        padding: .8rem 1.6rem;
+  }
 `;
 
 const BtnUrl = ({ children, onClick, backgroundColor, color}) => {
