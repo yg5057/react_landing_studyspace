@@ -61,7 +61,7 @@ const Section03 = () => {
   const openURl = () => {  window.open('https://walla.my/survey/WpJlOOdYjQfEuPpfElQ6', '_blank');  };
 
   return (
-    <SectionWrapper ref={sectionRef}>
+    <SectionWrapper  ref={sectionRef}>
       <CardFreeTrial>
         {isMobile ? (
           <TypoH6 color='var(--White)' fontWeight='100'>Free-trial</TypoH6>

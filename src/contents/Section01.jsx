@@ -46,23 +46,20 @@ const ContsWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 7rem;
   flex-shrink: 0;
   @media (max-width: 1024px) {  // tablet
-    gap: 8rem;
-  }
-  @media (max-width: 768px) {  // mobile
-    gap: 8rem;
+    gap: 6rem;
   }
 `;
 const TitleWrapper = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
+  gap: 5rem;
   flex-shrink: 0;
    @media (max-width: 1024px) {  // tablet
-    gap: 5rem;
+    gap: 4rem;
   }
 `
 const Span = styled.span`
