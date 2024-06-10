@@ -75,8 +75,8 @@ const Title = styled.div`
     flex-shrink: 0;
     animation: ${slideUpAnimation} 1s ease forwards;
     @media (max-width: 768px) {  // mobile
-    gap: .3rem;
-  }
+      gap: .3rem;
+    }
 `
 const Text = styled.article`
     display: flex;

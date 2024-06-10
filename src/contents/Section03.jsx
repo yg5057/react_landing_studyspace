@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 import useScrollAnimation from '../hooks/useScrollAnimation';
@@ -12,16 +12,6 @@ import BtnUrl from '../components/buttons/BtnUrl';
 
 
 
-const slideUpAnimation = keyframes`
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-`;
 const SectionWrapper = styled.section`
   padding: 2rem;
   width: 100vw;
@@ -54,14 +44,13 @@ const Btn = styled.div`
 `;
 
 const Section03 = () => {
-  const sectionRef = useScrollAnimation(slideUpAnimation);
   const isTablet = useMediaQuery('(max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   const openURl = () => {  window.open('https://walla.my/survey/WpJlOOdYjQfEuPpfElQ6', '_blank');  };
 
   return (
-    <SectionWrapper  ref={sectionRef}>
+    <SectionWrapper>
       <CardFreeTrial>
         {isMobile ? (
           <TypoH6 color='var(--White)' fontWeight='100'>Free-trial</TypoH6>
